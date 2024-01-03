@@ -1,0 +1,160 @@
+/* 
+------------------------------------------------
+General 
+----------------------------------------------------
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    --s: 60px;
+    --_g: #0000 83%,#b09f79 85% 99%,#0000 101%;
+    background:
+      radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+      radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+      radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+      radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+      #476074;
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+}
+
+/* 
+------------------------------------------------
+Navigation
+----------------------------------------------------
+*/
+
+nav ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #476074;
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+#about {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #476074;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #b89f8b;
+    color: black;
+}
+
+/* 
+------------------------------------------------
+Inhalt / Main
+----------------------------------------------------
+*/
+
+/* 
+------------------------------------------------
+Inhalt / Main
+----------------------------------------------------
+*/
+
+#inhalt {
+    background-color: white;
+    min-height: calc(100vh - 60px - 60px); /* Höhe der Seite abzüglich der Navigations- und Fußleistenhöhe */
+    margin: 65px 15px 10px 15px;
+    padding: 2.5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    z-index: 1; /* Stelle sicher, dass der Inhalt über der Fußleiste liegt */
+}
+
+#inhalt div {
+    color: black;
+}
+
+canvas {
+    background-color: #eee;
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}
+
+/* 
+------------------------------------------------
+Fusszeile
+----------------------------------------------------
+*/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0; /* Stelle sicher, dass die Fußleiste unter dem Inhalt liegt */
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    background-color: #476074;
+    border-top: 1px solid #bbb;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer ul li:hover {
+    background-color: white;
+}
+
+footer ul li:hover a {
+    color: #476074;
+    font-weight: bold;
+}
