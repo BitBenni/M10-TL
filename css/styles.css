@@ -93,19 +93,29 @@ Inhalt / Main
     text-align: center; /* Zentriere den Text */
 }
 
+#inhalt div h1 {
+    margin-bottom: 20px;
+}
+
+/* 
+------------------------------------------------
+Spiel
+----------------------------------------------------
+*/
+
 #gameCanvas {
     border: 5px solid #476074;
     background-color: #eee;
     border-radius: 18px;
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     margin: auto; /* Zentriere das Canvas */
     display: block;
     margin-bottom: 10px; /* Vergrößere den Abstand nach unten */
 }
 
 button {
-    margin-top: 20px; /* Vergrößere den Abstand nach oben */
+    margin-top: 15px; /* Vergrößere den Abstand nach oben */
     font-family: 'Roboto';
     padding: 10px;
     font-weight: bold;
@@ -120,15 +130,54 @@ button {
 
 /* 
 ------------------------------------------------
+Shop
+----------------------------------------------------
+*/
+
+.content-container {
+    display: flex;
+}
+
+.product-list {
+    flex: 2; /* 2/3 des Platzes für die Produktliste */
+}
+
+.product{
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-height: 200px;
+    width: auto;
+}
+
+.cart {
+    flex: 1; /* 1/3 des Platzes für den Warenkorb */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#shopping-card{
+    margin-top: 20px;
+}
+
+#shopping-cart ul {
+    list-style-type: none;
+}
+
+/* 
+------------------------------------------------
 Fusszeile
 ----------------------------------------------------
 */
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 0; /* Stelle sicher, dass die Fußleiste unter dem Inhalt liegt */
+    background-color: #476074;
+    color: white;
+    margin-top: auto; /* Setze den oberen Rand auf 'auto', um die Fußzeile immer nach unten zu drücken */
 }
 
 footer ul {

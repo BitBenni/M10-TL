@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <title>M10: Webtechnologie</title>
-        <script defer src=" "></script>
+        <script defer src="./js/shop.js"></script>
     </head>
 
     <body>
@@ -27,9 +27,43 @@
       </header>
 
       <main id="inhalt">
-        <div>
-          <h1>Hello, world!</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati quo fuga voluptatibus corrupti quae vero quaerat reprehenderit, et dolorem libero doloremque voluptas exercitationem odit suscipit tenetur nihil illo, laboriosam natus.</p>
+        <div class="content-container">
+          <!-- Produktliste -->
+          <div class="product-list">
+            <h1>Willkommen in unserem Online-Shop</h1>
+
+            <div class="product">
+              <img src="./image/patros.jpg" alt="Produkt 1">
+              <h2>Ziegenkäse</h2>
+              <p>Ein köstlicher Ziegenkäse aus hochwertiger Milch. Perfekt für Käseliebhaber!</p>
+              <p>Preis: €19.99</p>
+              <button data-name="Produkt 1" data-price="19.99">In den Warenkorb</button>
+            </div>
+
+            <div class="product">
+                <img src="./image/katzenfutter.jpg" alt="Produkt 2">
+                <h2>Katzenfutter</h2>
+                <p>Erstklassiges Katzenfutter, sorgfältig ausgewählt für die Gesundheit Ihrer geliebten Katze.</p>
+                <p>Preis: €29.99</p>
+                <button data-name="Produkt 2" data-price="29.99">In den Warenkorb</button>
+            </div>
+
+            <div class="product">
+                <img src="./image/MrBeanTeddy.jpeg" alt="Produkt 3">
+                <h2>Teddy von MrBean</h2>
+                <p>Ein niedlicher Teddybär, inspiriert von Mr. Bean's berühmtem Begleiter. Ein perfektes Geschenk für jeden Fan!</p>
+                <p>Preis: €99.99</p>
+                <button data-name="Produkt 3" data-price="99.99">In den Warenkorb</button>
+            </div>
+          </div>
+
+          <!-- Warenkorb -->
+          <div id="shopping-cart" class="cart">
+              <h2>Warenkorb</h2>
+              <ul id="cart-items"></ul>
+              <p>Gesamt: <span id="cart-total">€0.00</span></p>
+              <button id="checkout-btn">Zur Kasse</button>
+          </div>
         </div>
       </main>
 
