@@ -99,6 +99,33 @@ Inhalt / Main
 
 /* 
 ------------------------------------------------
+Home
+----------------------------------------------------
+*/
+
+/* 
+------------------------------------------------
+Home
+----------------------------------------------------
+*/
+
+#homepage h1, #homepage h2, #homepage h3 {
+    text-align: left;
+    text-align: initial; /* Hinzugefügt für die Textausrichtung */
+}
+
+#homepage p {
+    text-align: left;
+    text-align: initial; /* Hinzugefügt für die Textausrichtung */
+}
+
+#homepage h1 + p, #homepage h2 + p, #homepage h3 + p {
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+}
+
+
+/* 
+------------------------------------------------
 Spiel
 ----------------------------------------------------
 */
@@ -140,6 +167,7 @@ Shop
 
 .product-list {
     flex: 2; 
+    margin-right: 10px;
 }
 
 .product{
