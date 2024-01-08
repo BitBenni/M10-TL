@@ -79,31 +79,22 @@ Inhalt / Main
 ----------------------------------------------------
 */
 
-/* 
-------------------------------------------------
-Inhalt / Main
-----------------------------------------------------
-*/
-
 #inhalt {
     background-color: white;
     min-height: calc(100vh - 60px - 60px); /* Höhe der Seite abzüglich der Navigations- und Fußleistenhöhe */
-    margin: 65px 15px 10px 15px;
+    margin: 55px 15px 10px 15px;
     padding: 2.5%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-    z-index: 1; /* Stelle sicher, dass der Inhalt über der Fußleiste liegt */
-}
+} 
 
 #inhalt div {
     color: black;
 }
 
 canvas {
-    background-color: #eee;
-    width: 65%;
-    height: 65%;
+    background-color: #e1e1e1;
+    height: 350px;
     object-fit: contain;
 }
 
