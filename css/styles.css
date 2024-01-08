@@ -81,7 +81,7 @@ Inhalt / Main
 
 #inhalt {
     background-color: white;
-    min-height: calc(100vh - 60px - 60px); /* Höhe der Seite abzüglich der Navigations- und Fußleistenhöhe */
+    min-height: calc(100vh - 60px - 53px); /* Klappt irgendwie mit 53 ganz gut */
     margin: 55px 15px 10px 15px;
     padding: 2.5%;
     border-radius: 10px;
@@ -90,7 +90,7 @@ Inhalt / Main
 
 #inhalt div {
     color: black;
-    text-align: center; /* Zentriere den Text */
+    text-align: center;
 }
 
 #inhalt div h1 {
@@ -109,13 +109,13 @@ Spiel
     border-radius: 18px;
     width: 330px;
     height: 330px;
-    margin: auto; /* Zentriere das Canvas */
+    margin: auto; 
     display: block;
-    margin-bottom: 10px; /* Vergrößere den Abstand nach unten */
+    margin-bottom: 10px;
 }
 
 button {
-    margin-top: 15px; /* Vergrößere den Abstand nach oben */
+    margin-top: 15px;
     font-family: 'Roboto';
     padding: 10px;
     font-weight: bold;
@@ -124,8 +124,8 @@ button {
     background-color: #eee;
     border: 4px solid #476074;
     color: #303179;
-    display: block; /* Block-Element, um die Breite zu nutzen */
-    margin: auto; /* Zentriere das Element horizontal */
+    display: block; 
+    margin: auto;
 }
 
 /* 
@@ -139,7 +139,7 @@ Shop
 }
 
 .product-list {
-    flex: 2; /* 2/3 des Platzes für die Produktliste */
+    flex: 2; 
 }
 
 .product{
@@ -152,7 +152,7 @@ Shop
 }
 
 .cart {
-    flex: 1; /* 1/3 des Platzes für den Warenkorb */
+    flex: 1;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -177,7 +177,8 @@ footer {
     width: 100%;
     background-color: #476074;
     color: white;
-    margin-top: auto; /* Setze den oberen Rand auf 'auto', um die Fußzeile immer nach unten zu drücken */
+    position: relative;
+    margin-top: auto; 
 }
 
 footer ul {
