@@ -7,9 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <title>M10: Webtechnologie</title>
-        <script defer src="./js/main.js" type="module"></script>
+        <script defer src="./js/snake.js" type="module"></script>
     </head>
     <body>
+    
         <header>
             <nav>
               <div>
@@ -24,11 +25,13 @@
               </div>
             </nav>
         </header>
-
+        
         <main id="inhalt">
+            <div id="gameArea">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+            </div>
             <div>
-                <canvas id="canvas" width="500" height="500"></canvas>
-                <section id="info"></section>
+                <button id="startButton">Start Spiel</button>
             </div>
         </main>
 

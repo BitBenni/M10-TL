@@ -90,12 +90,32 @@ Inhalt / Main
 
 #inhalt div {
     color: black;
+    text-align: center; /* Zentriere den Text */
 }
 
-canvas {
-    background-color: #e1e1e1;
+#gameCanvas {
+    border: 5px solid #476074;
+    background-color: #eee;
+    border-radius: 18px;
+    width: 350px;
     height: 350px;
-    object-fit: contain;
+    margin: auto; /* Zentriere das Canvas */
+    display: block;
+    margin-bottom: 10px; /* Vergrößere den Abstand nach unten */
+}
+
+button {
+    margin-top: 20px; /* Vergrößere den Abstand nach oben */
+    font-family: 'Roboto';
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 18px;
+    background-color: #eee;
+    border: 4px solid #476074;
+    color: #303179;
+    display: block; /* Block-Element, um die Breite zu nutzen */
+    margin: auto; /* Zentriere das Element horizontal */
 }
 
 /* 
