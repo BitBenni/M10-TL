@@ -103,7 +103,7 @@ Home
 ----------------------------------------------------
 */
 
-#homepage h1, #homepage h2, #homepage h3 {
+#homepage h1, #homepage h2, #homepage h3{
     text-align: left;
     text-align: initial; /* Hinzugefügt für die Textausrichtung */
 }
@@ -152,6 +152,76 @@ Home
 
 .popup-content button {
     margin-top: 5px;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+#registration-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#registration-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#confirm-registration-btn {
+    background-color: #476074;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#confirm-registration-btn:hover {
+    background-color: #303179;
+}
+
+/* Optional: Stil für Abbruch-Button */
+#cancel-registration-btn {
+    background-color: #eee;
+    color: #476074;
+    padding: 10px;
+    border: 1px solid #476074;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#cancel-registration-btn:hover {
+    background-color: #ddd;
+}
+
+/* 
+------------------------------------------------
+Rechtliches
+----------------------------------------------------
+*/
+
+#impressum h1,
+#bfreiheit h1,
+#datenschutzerklaerung h1,
+#impressum h2,
+#bfreiheit h2,
+#datenschutzerklaerung h2,
+#impressum h3,
+#bfreiheit h3,
+#datenschutzerklaerung h3,
+#impressum p,
+#bfreiheit p,
+#datenschutzerklaerung p {
+    text-align: left; /* Links ausrichten */
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
 }
 
 /* 

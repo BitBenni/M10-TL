@@ -45,9 +45,9 @@
 
       <footer>
         <ul>
-            <li><a href="">Erklärung zur Barrierefreiheit</a></li>
-            <li><a href="">Impressum</a></li>
-            <li><a href="">Datenschutzerklärung</a></li>
+            <li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
         </ul>
       </footer>
 
@@ -65,24 +65,25 @@
 
       <!-- Registration Popup -->
       <div id="registration-popup" class="popup">
-          <div class="modal-overlay"></div>
-          <div class="popup-content">
-              <span class="close-btn" id="close-registration-btn">&times;</span>
-              <h2>Registrierung</h2>
-              <form id="registration-form" autocomplete="on">
+        <div class="modal-overlay"></div>
+        <div class="popup-content">
+            <span class="close-btn" id="close-registration-btn">&times;</span>
+            <h2>Registrierung</h2>
+            <form id="registration-form" autocomplete="on">
+                <div id="error-message" style="color: red; display: none;">Name, Vorname und E-Mail dürfen nicht leer sein.</div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required autocomplete="name">
-            
+
                 <label for="vorname">Vorname:</label>
                 <input type="text" id="vorname" name="vorname" required autocomplete="given-name">
-            
+
                 <label for="email">E-Mail:</label>
                 <input type="email" id="email" name="email" required autocomplete="email">
-            
+
                 <button type="button" id="confirm-registration-btn">Bestätigen</button>
                 <button type="button" id="cancel-registration-btn">Abbrechen</button>
             </form>            
-          </div>
+        </div>
       </div>
 
       <!-- Confirmation Popup -->

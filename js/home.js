@@ -19,9 +19,8 @@ function closeConfirmationPopup() {
     document.getElementById("confirmation-popup").style.display = "none";
 }
 
-// DOMContentLoaded-Event-Listener
 document.addEventListener("DOMContentLoaded", function () {
-   
+
     document.getElementById("newsletter-popup").style.display = "flex";
 
     document.getElementById("subscribe-btn").addEventListener('click', function () {
@@ -39,20 +38,37 @@ document.addEventListener("DOMContentLoaded", function () {
         closePopup();
     });
 
-    document.getElementById('registration-form').addEventListener('input', function () {
-        var isValid = this.checkValidity();
-        document.getElementById('confirm-registration-btn').disabled = !isValid;
+    document.getElementById('confirm-registration-btn').addEventListener('click', function () {
+        // Prüfung auf leere Felder
+        var nameInput = document.getElementById('name');
+        var vornameInput = document.getElementById('vorname');
+        var emailInput = document.getElementById('email');
+        var errorMessage = document.getElementById('error-message');
+
+        if (nameInput.value.trim() === '' || vornameInput.value.trim() === '' || emailInput.value.trim() === '') {
+            // Zeige die Fehlermeldung an
+            errorMessage.style.display = 'block';
+            return;
+        }
+
+        // Verstecke die Fehlermeldung, wenn die Eingabe gültig ist
+        errorMessage.style.display = 'none';
+
+        closeRegistrationPopup();
+        showConfirmationPopup();
     });
 
-    document.getElementById('registration-form').addEventListener('submit', function (event) {
-        console.log("Form submit event captured");
-        event.preventDefault();
-        showConfirmationPopup();
-    });    
-    
+    document.getElementById("close-newsletter-btn").addEventListener('click', function () {
+        console.log("Close button clicked");
+        closePopup();
+    });
+
     document.getElementById('close-registration-btn').addEventListener('click', closeRegistrationPopup);
     document.getElementById('cancel-registration-btn').addEventListener('click', closeRegistrationPopup);
 
     document.getElementById('close-confirmation-btn').addEventListener('click', closeConfirmationPopup);
     document.getElementById('ok-confirmation-btn').addEventListener('click', closeConfirmationPopup);
 });
+
+
+
