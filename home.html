@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <title>M10: Webtechnologie</title>
-        <script defer src=" "></script>
+        <script defer src="./js/home.js"></script>
     </head>
 
     <body>
@@ -50,5 +50,51 @@
             <li><a href="">Datenschutzerklärung</a></li>
         </ul>
       </footer>
+
+      <!-- Newsletter Popup -->
+      <div id="newsletter-popup" class="popup">
+        <div class="modal-overlay"></div>
+        <div class="popup-content">
+            <span class="close-btn" id="close-newsletter-btn">&times;</span>
+            <h2>Möchten Sie sich für unseren Newsletter anmelden?</h2>
+            <p>Erhalten Sie die neuesten Updates direkt in Ihr Postfach!</p>
+            <button id="subscribe-btn">Ja, anmelden!</button>
+            <button id="no-thanks-btn">Nein, danke</button>
+        </div>
+      </div>
+
+      <!-- Registration Popup -->
+      <div id="registration-popup" class="popup">
+          <div class="modal-overlay"></div>
+          <div class="popup-content">
+              <span class="close-btn" id="close-registration-btn">&times;</span>
+              <h2>Registrierung</h2>
+              <form id="registration-form" autocomplete="on">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+            
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname" required autocomplete="given-name">
+            
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+            
+                <button type="button" id="confirm-registration-btn">Bestätigen</button>
+                <button type="button" id="cancel-registration-btn">Abbrechen</button>
+            </form>            
+          </div>
+      </div>
+
+      <!-- Confirmation Popup -->
+      <div id="confirmation-popup" class="popup">
+          <div class="modal-overlay"></div>
+          <div class="popup-content">
+              <span class="close-btn" id="close-confirmation-btn">&times;</span>
+              <h2>Bestätigung</h2>
+              <p>Vielen Dank für die Registrierung!</p>
+              <button id="ok-confirmation-btn">OK</button>
+          </div>
+      </div>
+
     </body>
 </html>

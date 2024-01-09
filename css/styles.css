@@ -123,6 +123,42 @@ Home
     margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: auto;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none; 
+    z-index: 998;
+    pointer-events: none; 
+}
+
+.popup-content button {
+    margin-top: 5px;
+}
 
 /* 
 ------------------------------------------------
