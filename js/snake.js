@@ -161,7 +161,7 @@ function SnakePart(x, y) {
 
 // Starte das Spiel mit dem Startknopf
 document.getElementById("startButton").addEventListener("click", function(){
-    // Setze die Geschwindigkeit und andere Variablen zurÃ¼ck, um das Spiel neu zu starten.
+    // Setze die Geschwindigkeit und andere Variablen zurueck, um das Spiel neu zu starten.
     speed = 5;
     tileCount = 20;
     tileSize = canvas.width / tileCount;
