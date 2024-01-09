@@ -75,7 +75,7 @@ function checkAppleCollision() {
 
 function drawScore() {
     ctx.fillStyle = "#141850";
-    ctx.font = "24px Roboto"; // Ändere die Schriftgröße auf 24px oder eine andere gewünschte Größe
+    ctx.font = "24px Roboto"; // Aendere die Schriftgröße auf 24px oder eine andere gewünschte Größe
     ctx.fillText("Score " + score, canvas.width - 100, 30); // Passe die Position nach Bedarf an
 }
 
