@@ -81,7 +81,7 @@ Inhalt / Main
 
 #inhalt {
     background-color: white;
-    min-height: calc(100vh - 60px - 53px); /* Klappt irgendwie mit 53 ganz gut */
+    min-height: calc(100vh - 60px - 52px); /* Klappt irgendwie mit 53 ganz gut */
     margin: 55px 15px 10px 15px;
     padding: 2.5%;
     border-radius: 10px;
