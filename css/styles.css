@@ -322,7 +322,6 @@ Forum
     overflow: hidden;
     width: 90%;
     margin: 20px auto;
-    min-height: calc(100vh - 60px - 130px);
     transition: min-height 0.3s ease;
 }
 
