@@ -297,6 +297,96 @@ Shop
 
 /* 
 ------------------------------------------------
+Socialmedia
+----------------------------------------------------
+*/
+
+#socialmedia h1,
+#socialmedia h2,
+#socialmedia h3,
+#socialmedia p{
+    text-align: left; /* Links ausrichten */
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+}
+
+/* 
+------------------------------------------------
+Forum
+----------------------------------------------------
+*/
+
+.forum-container {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    width: 90%;
+    margin: 20px auto;
+    min-height: calc(100vh - 60px - 130px);
+    transition: min-height 0.3s ease;
+}
+
+.forum-posts {
+    max-height: calc(100vh - 60px - 52px);
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* Erhöhe die Schriftgröße im Forum */
+.forum-container,
+.forum-container textarea,
+.forum-container button {
+    font-size: 16px;
+}
+
+.post {
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.post-info {
+    flex: 1;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.post-content {
+    flex: 3;
+    text-align: left;
+}
+
+.input-area {
+    padding: 15px;
+    background-color: #f4f4f4;
+    text-align: center; /* Zentrierung der Eingabe */
+}
+
+.forum-container input,
+.forum-container textarea {
+    width: calc(100% - 20px); /* Breite für das Textfeld anpassen */
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.forum-container button {
+    background-color: #128C7E;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.forum-container button:hover {
+    background-color: #0B5F5B;
+}
+
+/* 
+------------------------------------------------
 Fusszeile
 ----------------------------------------------------
 */

@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <title>M10: Webtechnologie</title>
-        <script defer src=" "></script>
+        <script defer src="./js/forum.js"></script>
     </head>
 
     <body>
@@ -27,10 +27,33 @@
       </header>
 
       <main id="inhalt">
-        <div>
-          <h1>Hello, world!</h1>
-          <p>HI</p>
-          <p>Giuseppe geh Pizza machen zu Mindestlohn</p>
+        <div class="forum-container">
+          <div class="forum-posts" id="forumPosts">
+              <!-- Hier werden die Beiträge angezeigt -->
+              <div class="post">
+                <div class="post-info">
+                  <h3>Giuseppe</h3>
+                </div>
+                <div class="post-content">
+                  <p>Ich beschwere mich über das Essen!</p>
+                </div>
+              </div>
+              <div class="post">
+                <div class="post-info">
+                  <h3>Benni</h3>
+                </div>
+                <div class="post-content">
+                  <p>lol</p>
+                </div>
+              </div>
+          </div>
+    
+          <div class="input-area">
+              <label for="nameInput">Dein Name:</label>
+              <input type="text" id="nameInput" placeholder="Dein Name">
+              <textarea id="postInput" placeholder="Schreibe deinen Beitrag..."></textarea>
+              <button id="addPostBtn">Beitrag hinzufügen</button>
+          </div>
         </div>
       </main>
 
