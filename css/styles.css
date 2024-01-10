@@ -387,6 +387,20 @@ Forum
 
 /* 
 ------------------------------------------------
+About
+----------------------------------------------------
+*/
+
+#about-us h1,
+#about-us h2,
+#about-us h3,
+#about-us p{
+    text-align: left; /* Links ausrichten */
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+}
+
+/* 
+------------------------------------------------
 Fusszeile
 ----------------------------------------------------
 */
