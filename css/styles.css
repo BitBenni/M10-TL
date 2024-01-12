@@ -12,29 +12,29 @@ General
 }
 
 body {
-    --s: 60px;
-    --_g: #0000 83%,#b09f79 85% 99%,#0000 101%;
+    --s: 60px; /* Definition einer CSS-Variable für die Kopfhöhe */
+    --_g: #0000 83%,#b09f79 85% 99%,#0000 101%; /* Definition einer CSS-Variable für den Hintergrund */
     background:
       radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
       radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
       radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
       radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
-      #476074;
-    background-size: calc(2*var(--s)) calc(2*var(--s));
+      #476074; /* Erstellung eines Hintergrunds mit radialen Verläufen und Farbverläufen */
+    background-size: calc(2*var(--s)) calc(2*var(--s)); /* Festlegung der Hintergrundgröße */
 }
 
 /* 
 ------------------------------------------------
 Navigation
-----------------------------------------------------
+------------------------------------------------
 */
 
 nav ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    overflow: hidden;
+    position: fixed; /* Positioniere die Navigation fest an der oberen Seite */
+    top: 0; /* Abstand von oben auf 0 setzen */
+    width: 100%; /* Volle Breite für die Navigation */
+    list-style-type: none; /* Entferne Aufzählungspunkte der Liste */
+    overflow: hidden; /* Verstecke den Überlauf der Liste */
     background-color: #476074;
     border-bottom: 1px solid #bbb;
     margin: 0;
@@ -76,7 +76,7 @@ nav ul li a:hover {
 /* 
 ------------------------------------------------
 Inhalt / Main
-----------------------------------------------------
+------------------------------------------------
 */
 
 #inhalt {
@@ -100,7 +100,7 @@ Inhalt / Main
 /* 
 ------------------------------------------------
 Home
-----------------------------------------------------
+------------------------------------------------
 */
 
 #homepage h1, #homepage h2, #homepage h3{
@@ -205,7 +205,7 @@ Home
 /* 
 ------------------------------------------------
 Rechtliches
-----------------------------------------------------
+------------------------------------------------
 */
 
 #impressum h1,
@@ -227,7 +227,7 @@ Rechtliches
 /* 
 ------------------------------------------------
 Spiel
-----------------------------------------------------
+------------------------------------------------
 */
 
 #gameCanvas {
@@ -258,7 +258,7 @@ button {
 /* 
 ------------------------------------------------
 Shop
-----------------------------------------------------
+------------------------------------------------
 */
 
 .content-container {
@@ -298,7 +298,7 @@ Shop
 /* 
 ------------------------------------------------
 Socialmedia
-----------------------------------------------------
+------------------------------------------------
 */
 
 #socialmedia h1,
@@ -312,7 +312,7 @@ Socialmedia
 /* 
 ------------------------------------------------
 Forum
-----------------------------------------------------
+------------------------------------------------
 */
 
 .forum-container {
@@ -387,7 +387,7 @@ Forum
 /* 
 ------------------------------------------------
 About
-----------------------------------------------------
+------------------------------------------------
 */
 
 #about-us h1,
@@ -401,7 +401,7 @@ About
 /* 
 ------------------------------------------------
 Fusszeile
-----------------------------------------------------
+------------------------------------------------
 */
 
 footer {
