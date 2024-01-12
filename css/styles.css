@@ -1,4 +1,4 @@
-/* 
+/* Author: Benjamin Böhm und Giuseppe Teresi
 ------------------------------------------------
 General 
 ------------------------------------------------
@@ -151,55 +151,55 @@ Home
 }
 
 .popup-content button {
-    margin-top: 5px;
+    margin-top: 5px; /* Oberen Abstand von 5px für die Buttons im Popup-Inhalt */
 }
 
 #error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-    display: none;
+    color: red; /* Textfarbe für Fehlermeldungen auf Rot setzen */
+    font-size: 14px; /* Schriftgröße der Fehlermeldung auf 14px setzen */
+    margin-top: 5px; /* Oberen Abstand von 5px für die Fehlermeldung */
+    display: none; /* Fehlermeldung standardmäßig ausblenden */
 }
 
 #registration-form label {
-    display: block;
-    margin-top: 10px;
+    display: block; /* Display-Eigenschaft auf 'block' setzen */
+    margin-top: 10px; /* Oberen Abstand von 10px für Labels im Anmeldeformular */
 }
 
 #registration-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+    width: 100%; /* Volle Breite für Eingabefelder im Anmeldeformular */
+    padding: 8px; /* Innenabstand von 8px für Eingabefelder im Anmeldeformular */
+    margin-top: 5px; /* Oberen Abstand von 5px für Eingabefelder im Anmeldeformular */
+    box-sizing: border-box; /* Verwende das Border-Box-Modell für konsistente Größenberechnungen */
 }
 
 #confirm-registration-btn {
-    background-color: #476074;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #476074; /* Hintergrundfarbe für den Bestätigungsbutton im Anmeldeformular */
+    color: white; /* Textfarbe für den Bestätigungsbutton im Anmeldeformular */
+    padding: 10px; /* Innenabstand von 10px für den Bestätigungsbutton im Anmeldeformular */
+    border: none; /* Keinen Rand für den Bestätigungsbutton im Anmeldeformular */
+    border-radius: 5px; /* Abgerundete Ecken mit 5px Radius für den Bestätigungsbutton */
+    cursor: pointer; /* Zeige den Zeiger-Cursor beim Überfahren des Bestätigungsbuttons an */
+    margin-top: 10px; /* Oberen Abstand von 10px für den Bestätigungsbutton im Anmeldeformular */
 }
 
 #confirm-registration-btn:hover {
-    background-color: #303179;
+    background-color: #303179; /* Hintergrundfarbe für Hover-Effekt des Bestätigungsbuttons */
 }
 
 /* Optional: Stil für Abbruch-Button */
 #cancel-registration-btn {
-    background-color: #eee;
-    color: #476074;
-    padding: 10px;
-    border: 1px solid #476074;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    background-color: #eee; /* Hintergrundfarbe für den Abbruch-Button im Anmeldeformular */
+    color: #476074; /* Textfarbe für den Abbruch-Button im Anmeldeformular */
+    padding: 10px; /* Innenabstand von 10px für den Abbruch-Button im Anmeldeformular */
+    border: 1px solid #476074; /* Rand mit 1px und grauer Farbe für den Abbruch-Button im Anmeldeformular */
+    border-radius: 5px; /* Abgerundete Ecken mit 5px Radius für den Abbruch-Button */
+    cursor: pointer; /* Zeige den Zeiger-Cursor beim Überfahren des Abbruch-Buttons an */
+    margin-top: 10px; /* Oberen Abstand von 10px für den Abbruch-Button im Anmeldeformular */
 }
 
 #cancel-registration-btn:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Hintergrundfarbe für Hover-Effekt des Abbruch-Buttons */
 }
 
 /* 
@@ -221,24 +221,24 @@ Rechtliches
 #bfreiheit p,
 #datenschutzerklaerung p {
     text-align: left; /* Links ausrichten */
-    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */ /* Unten 10px Abstand für Überschriften und Absätze in rechtlichen Abschnitten */
 }
 
 /* 
 ------------------------------------------------
-Spiel
+Spiel // Snake
 ------------------------------------------------
 */
 
 #gameCanvas {
-    border: 5px solid #476074;
-    background-color: #eee;
-    border-radius: 18px;
-    width: 330px;
-    height: 330px;
-    margin: auto; 
-    display: block;
-    margin-bottom: 10px;
+    border: 5px solid #476074; /* Rand mit 5px und blauer Farbe für das Spielcanvas */
+    background-color: #eee; /* Hintergrundfarbe für das Spielcanvas */
+    border-radius: 18px; /* Abgerundete Ecken mit 18px Radius für das Spielcanvas */
+    width: 330px; /* Breite des Spielcanvas auf 330px setzen */
+    height: 330px; /* Höhe des Spielcanvas auf 330px setzen */
+    margin: auto; /* Zentriere das Spielcanvas */
+    display: block; /* Zeige das Spielcanvas als Blockelement an */
+    margin-bottom: 10px; /* Unten 10px Abstand für das Spielcanvas */
 }
 
 button {
