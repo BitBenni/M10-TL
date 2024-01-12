@@ -35,42 +35,42 @@ nav ul {
     width: 100%; /* Volle Breite für die Navigation */
     list-style-type: none; /* Entferne Aufzählungspunkte der Liste */
     overflow: hidden; /* Verstecke den Überlauf der Liste */
-    background-color: #476074;
-    border-bottom: 1px solid #bbb;
-    margin: 0;
-    padding: 0;
+    background-color: #476074; /* Hintergrundfarbe der Navigation setzen */
+    border-bottom: 1px solid #bbb; /* Untere Grenze mit 1px und grauer Farbe erstellen */
+    margin: 0; /* Außenabstand nullen */
+    padding: 0; /* Innenabstand nullen */
 }
 
 nav ul li {
-    float: left;
-    border-right: 1px solid #bbb;
+    float: left; /* Setze Listenelemente nebeneinander */
+    border-right: 1px solid #bbb; /* Setze rechten Rand der Listenelemente mit 1px und grauer Farbe */
 }
 
 nav ul li:last-child {
-    border-right: none;
+    border-right: none; /* Entferne den rechten Rand des letzten Listenelements */
 }
 
 #about {
-    float: right;
+    float: right; /* Platziere das Element 'about' auf der rechten Seite der Navigation */
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: block; /* Element als Blockelement anzeigen */
+    color: white; /* Textfarbe auf Weiß setzen */
+    text-align: center; /* Text zentrieren */
+    padding: 14px 16px; /* Innenabstand oben/unten: 14px, links/rechts: 16px */
+    text-decoration: none; /* Unterstreichungen für Links entfernen */
 }
 
-nav ul li a:hover {
-    background-color: white;
-    color: #476074;
-    font-weight: bold;
+nav ul li a:hover { /* Stil für Hover-Effekt im Navigationsmenü */
+    background-color: white; /* Hintergrundfarbe auf Weiß setzen, wenn über dem Link gehovert wird */
+    color: #476074; /* Textfarbe auf Dunkelblau ändern, wenn über dem Link gehovert wird */
+    font-weight: bold; /* Fettdruck für den Text, wenn über dem Link gehovert wird */
 }
 
-.active {
-    background-color: #b89f8b;
-    color: black;
+.active { /* Stil für aktives Navigationsmenü-Element */
+    background-color: #b89f8b; /* Hintergrundfarbe auf Braun setzen, um das aktive Element zu markieren */
+    color: black; /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
 }
 
 /* 
@@ -80,21 +80,21 @@ Inhalt / Main
 */
 
 #inhalt {
-    background-color: white;
-    min-height: calc(100vh - 60px - 52px); /* Klappt irgendwie mit 53 ganz gut */
-    margin: 55px 15px 10px 15px;
-    padding: 2.5%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white; /* Weißen Hintergrund für den Hauptinhalt setzen */
+    min-height: calc(100vh - 60px - 52px); /* Klappt irgendwie mit 53 ganz gut */ /* Mindesthöhe berechnen, unter Berücksichtigung der Kopfzeile und Navigation */
+    margin: 55px 15px 10px 15px; /* Außenabstände festlegen */
+    padding: 2.5%; /* Innenabstand festlegen */
+    border-radius: 10px; /* Abgerundete Ecken mit 10px Radius */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Schatten erstellen */
 } 
 
 #inhalt div {
-    color: black;
-    text-align: center;
+    color: black; /* Textfarbe des Inhalts auf schwarz setzen */
+    text-align: center; /* Zentriere den Text im Inhalt */
 }
 
 #inhalt div h1 {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Unten 20px Abstand für den H1-Titel */
 }
 
 /* 
@@ -104,50 +104,50 @@ Home
 */
 
 #homepage h1, #homepage h2, #homepage h3{
-    text-align: left;
+    text-align: left; /* Text links ausrichten */
     text-align: initial; /* Hinzugefügt für die Textausrichtung */
 }
 
 #homepage p {
-    text-align: left;
+    text-align: left; /* Text links ausrichten */
     text-align: initial; /* Hinzugefügt für die Textausrichtung */
 }
 
 #homepage h1 + p, #homepage h2 + p, #homepage h3 + p {
-    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */ /* Unten 10px Abstand für Absätze nach Überschriften */
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+    display: none; /* Popup standardmäßig ausblenden */
+    position: fixed; /* Positionierung fest setzen */
+    top: 0; /* Abstand von oben auf 0 setzen */
+    left: 0; /* Abstand von links auf 0 setzen */
+    width: 100%; /* Volle Breite für das Popup */
+    height: 100%; /* Volle Höhe für das Popup */
+    background: rgba(0, 0, 0, 0.7); /* Hintergrund mit leichtem Schwarz und Transparenz erstellen */
+    justify-content: center; /* Zentriere den Inhalt vertikal */
+    align-items: center; /* Zentriere den Inhalt horizontal */
+    z-index: 999; /* Setze die Z-Ebene auf 999 für höhere Priorität */
 }
 
 .popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    max-width: 400px;
-    margin: auto;
+    background: #fff; /* Weißer Hintergrund für den Popup-Inhalt */
+    padding: 20px; /* Innenabstand von 20px für den Popup-Inhalt */
+    border-radius: 10px; /* Abgerundete Ecken mit 10px Radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Schatten für den Popup-Inhalt */
+    max-width: 400px; /* Maximale Breite des Popup-Inhalts auf 400px begrenzen */
+    margin: auto; /* Automatisches Zentrieren des Popup-Inhalts */
 }
 
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: none; 
-    z-index: 998;
-    pointer-events: none; 
+    position: fixed; /* Positionierung fest setzen */
+    top: 0; /* Abstand von oben auf 0 setzen */
+    left: 0; /* Abstand von links auf 0 setzen */
+    width: 100%; /* Volle Breite für das Overlay */
+    height: 100%; /* Volle Höhe für das Overlay */
+    background: none; /* Transparenter Hintergrund für das Overlay */
+    z-index: 998; /* Setze die Z-Ebene auf 998 für etwas weniger Priorität als das Popup */
+    pointer-events: none; /* Deaktiviere Pointer-Events, um Klicks auf darunterliegende Elemente zu ermöglichen */
 }
 
 .popup-content button {
