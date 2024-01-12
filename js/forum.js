@@ -32,7 +32,7 @@ document.getElementById('addPostBtn').addEventListener('click', function() { // 
 
         forumPosts.appendChild(postDiv); // Das Haupt-Div für den Beitrag dem Bereich für Forum-Beiträge hinzufügen
 
-        // Die Eingabefelder leeren, nachdem der Beitrag hinzugefügt wurde
+        // Die Eingabefelder leeren, nachdem der Beitrag hinzugefügt wurde ---
         nameInput.value = '';
         postInput.value = '';
     }
