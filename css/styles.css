@@ -1,14 +1,14 @@
 /* 
 ------------------------------------------------
 General 
-----------------------------------------------------
+------------------------------------------------
 */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0; /* Nullen des Padding für alle Elemente */
+    margin: 0; /* Nullen des margin für alle Elemente */
+    box-sizing: border-box; /* Verwende das Border-Box-Modell für konsistentes Sizing */
+    font-family: Arial, Helvetica, sans-serif; /* Setze die Standardschriftart für die Seite */
 }
 
 body {
