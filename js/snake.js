@@ -9,7 +9,7 @@
 Die Umsetzung der Canvas-Zeichenoberfläche ähnelt dem grafischen Benutzerinterface (GUI) von Microsoft Windows 
 (Quelle: https://wiki.selfhtml.org/wiki/JavaScript/Canvas)
 
-und lässt sich formal in folgende Schritte gliedern:
+und lässt sich in folgende Schritte gliedern:
 
 Jedes Mal, wenn der Inhalt der Canvas neu gezeichnet werden soll, muss eine eigens dafür konzipierte Funktion manuell aufgerufen werden. 
 Dies kann entweder innerhalb einer anderen Funktion oder durch einen Event-Handler wie beispielsweise "load", "DOMContentLoaded" oder "click" geschehen. 
