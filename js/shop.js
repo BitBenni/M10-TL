@@ -1,4 +1,7 @@
 
+
+// Author: Benjamin Böhm und Giuseppe Teresi
+
 // Warten, bis das DOM vollständig geladen ist
 document.addEventListener('DOMContentLoaded', function () {
 

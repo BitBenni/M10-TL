@@ -1,4 +1,8 @@
 
+
+// Author: Benjamin Böhm und Giuseppe Teresi
+
+
 document.getElementById('addPostBtn').addEventListener('click', function() { // Ereignislistener für den Klick auf den "Beitrag hinzufügen"-Button hinzufügen
 
     // Elemente aus dem DOM abrufen

@@ -1,4 +1,7 @@
 
+
+// Author: Benjamin Böhm und Giuseppe Teresi
+
 // Funktion zum Schließen des Newsletter-Popups
 function closePopup() {
     document.getElementById("newsletter-popup").style.display = "none";
