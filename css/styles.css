@@ -242,17 +242,17 @@ Spiel // Snake
 }
 
 button {
-    margin-top: 15px;
-    font-family: 'Roboto';
-    padding: 10px;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 18px;
-    background-color: #eee;
-    border: 4px solid #476074;
-    color: #303179;
-    display: block; 
-    margin: auto;
+    margin-top: 15px; /* Oberen Abstand von 15px für Buttons im Spielbereich */
+    font-family: 'Roboto'; /* Verwende die Schriftart 'Roboto' für Buttons */
+    padding: 10px; /* Innenabstand von 10px für Buttons im Spielbereich */
+    font-weight: bold; /* Fettdruck für den Text in Buttons im Spielbereich */
+    font-size: 16px; /* Schriftgröße von 16px für den Text in Buttons im Spielbereich */
+    border-radius: 18px; /* Abgerundete Ecken mit 18px Radius für Buttons im Spielbereich */
+    background-color: #eee; /* Hintergrundfarbe für Buttons im Spielbereich */
+    border: 4px solid #476074; /* Rand mit 4px und blauer Farbe für Buttons im Spielbereich */
+    color: #303179; /* Textfarbe für Buttons im Spielbereich */
+    display: block;  /* Zeige Buttons als Blockelemente an */
+    margin: auto; /* Zentriere Buttons im Spielbereich */
 }
 
 /* 
@@ -262,37 +262,37 @@ Shop
 */
 
 .content-container {
-    display: flex;
+    display: flex; /* Verwende Flexbox für den Shopbereich */
 }
 
 .product-list {
-    flex: 2; 
-    margin-right: 10px;
+    flex: 2; /* Setze die Breite der Produktliste auf 2 */
+    margin-right: 10px; /* Rechten Abstand von 10px für die Produktliste */
 }
 
 .product{
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Unten 20px Abstand für Produkte im Shop */
 }
 
 .product img {
-    max-height: 200px;
-    width: auto;
+    max-height: 200px; /* Maximale Höhe von Produktbildern auf 200px begrenzen */
+    width: auto; /* Automatische Breitenanpassung für Produktbilder */
 }
 
 .cart {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex: 1; /* Setze die Breite des Warenkorbs auf 1 */
+    padding: 20px; /* Innenabstand von 20px */
+    background-color: #fff; /* Weiße Hintergrundfarbe für den Warenkorb */
+    border-radius: 10px; /* Abgerundete Ecken mit 10px Radius für den Warenkorb */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Schatten für den Warenkorb */
 }
 
 #shopping-card{
-    margin-top: 20px;
+    margin-top: 20px; /* Oberen Abstand von 20px für den Warenkorb */
 }
 
 #shopping-cart ul {
-    list-style-type: none;
+    list-style-type: none; /* Entferne Aufzählungspunkte der Liste im Warenkorb */
 }
 
 /* 
@@ -306,7 +306,7 @@ Socialmedia
 #socialmedia h3,
 #socialmedia p{
     text-align: left; /* Links ausrichten */
-    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+    margin-bottom: 10px; /* Unten 10px Abstand für Überschriften und Absätze in Social Media Abschnitten */
 }
 
 /* 
@@ -316,72 +316,72 @@ Forum
 */
 
 .forum-container {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: hidden;
-    width: 90%;
-    margin: 20px auto;
-    transition: min-height 0.3s ease;
+    background-color: #f0f0f0; /* Hintergrundfarbe für das Forum-Container setzen */
+    border-radius: 10px; /* Abgerundete Ecken mit 10px Radius für das Forum-Container */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Schatten für das Forum-Container */
+    overflow: hidden; /* Verstecke den Überlauf des Forum-Container Inhalts */
+    width: 90%; /* Breite des Forum-Container auf 90% setzen */
+    margin: 20px auto; /* Außenabstände und automatisches Zentrieren des Forum-Container */
+    transition: min-height 0.3s ease; /* Animation für minimale Höhe mit 0.3s Dauer und Easing */
 }
 
 .forum-posts {
-    max-height: calc(100vh - 60px - 52px);
-    overflow-y: auto;
-    padding: 10px;
+    max-height: calc(100vh - 60px - 52px); /* Maximale Höhe der Forum-Beiträge unter Berücksichtigung der Kopfzeile und Navigation */
+    overflow-y: auto; /* Scrollleiste für Überlauf im Forum-Beitragsbereich anzeigen */
+    padding: 10px; /* Innenabstand von 10px für den Forum-Beitragsbereich */
 }
 
 /* Erhöhe die Schriftgröße im Forum */
 .forum-container,
 .forum-container textarea,
 .forum-container button {
-    font-size: 16px;
+    font-size: 16px; /* Schriftgröße auf 16px für den Forum-Container, Textarea und Buttons setzen */
 }
 
 .post {
-    background-color: #e2e2e2;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    padding: 10px;
-    display: flex;
+    background-color: #e2e2e2; /* Hintergrundfarbe für Forum-Beiträge setzen */
+    border-radius: 8px; /* Abgerundete Ecken mit 8px Radius für Forum-Beiträge */
+    margin-bottom: 10px; /* Unten 10px Abstand für Forum-Beiträge */
+    padding: 10px; /* Innenabstand von 10px für Forum-Beiträge */
+    display: flex; /* Verwende Flexbox für die Anordnung von Forum-Beiträgen */
 }
 
 .post-info {
-    flex: 1;
-    text-align: left;
-    padding-right: 10px;
+    flex: 1; /* Setze die Breite des Info-Bereichs im Forum-Beitrag auf 1 */
+    text-align: left; /* Text links ausrichten */
+    padding-right: 10px; /* Rechten Innenabstand von 10px für den Info-Bereich im Forum-Beitrag */
 }
 
 .post-content {
-    flex: 3;
-    text-align: left;
+    flex: 3; /* Setze die Breite des Inhalts-Bereichs im Forum-Beitrag auf 3 */
+    text-align: left; /* Text links ausrichten */
 }
 
 .input-area {
-    padding: 15px;
-    background-color: #f4f4f4;
-    text-align: center; /* Zentrierung der Eingabe */
+    padding: 15px; /* Innenabstand von 15px für den Eingabe-Bereich im Forum */
+    background-color: #f4f4f4; /* Hintergrundfarbe für den Eingabe-Bereich im Forum setzen */
+    text-align: center; /* Text zentrieren im Eingabe-Bereich im Forum */
 }
 
 .forum-container input,
 .forum-container textarea {
     width: calc(100% - 20px); /* Breite für das Textfeld anpassen */
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    padding: 8px; /* Innenabstand von 8px für Eingabe-Felder im Forum-Container */
+    margin-bottom: 10px; /* Unten 10px Abstand für Eingabe-Felder im Forum-Container */
+    box-sizing: border-box; /* Verwende das Border-Box-Modell für konsistente Größenberechnungen */
 }
 
 .forum-container button {
-    background-color: #128C7E;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #128C7E; /* Hintergrundfarbe für Buttons im Forum-Container */
+    color: white; /* Textfarbe für Buttons im Forum-Container */
+    border: none; /* Keinen Rand für Buttons im Forum-Container */
+    padding: 10px 15px; /* Innenabstand von 10px oben und unten, 15px links und rechts für Buttons im Forum-Container */
+    cursor: pointer; /* Zeige den Zeiger-Cursor beim Überfahren von Buttons im Forum-Container an */
+    border-radius: 5px; /* Abgerundete Ecken mit 5px Radius für Buttons im Forum-Container */
 }
 
 .forum-container button:hover {
-    background-color: #0B5F5B;
+    background-color: #0B5F5B; /* Hintergrundfarbe für Hover-Effekt von Buttons im Forum-Container */
 }
 
 /* 
@@ -395,58 +395,59 @@ About
 #about-us h3,
 #about-us p{
     text-align: left; /* Links ausrichten */
-    margin-bottom: 10px; /* Füge einen Abstand am oberen Rand hinzu */
+    margin-bottom: 10px; /* Unten 10px Abstand für Überschriften und Absätze im Über-uns-Bereich */
 }
 
 /* 
 ------------------------------------------------
-Fusszeile
+Fußzeile
 ------------------------------------------------
 */
 
+/* Stilregeln für die Fußzeilen-Navigation */
 footer {
-    width: 100%;
-    background-color: #476074;
-    color: white;
-    position: relative;
-    margin-top: auto; 
+    width: 100%; /* Volle Breite für die Fußzeile */
+    background-color: #476074; /* Hintergrundfarbe für die Fußzeile setzen */
+    color: white; /* Textfarbe für die Fußzeile auf weiß setzen */
+    position: relative; /* Position relativ setzen */
+    margin-top: auto; /* Oberen Abstand automatisch setzen */
 }
 
 footer ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    list-style-type: none;
-    overflow: hidden;
-    text-align: center;
-    background-color: #476074;
-    border-top: 1px solid #bbb;
-    margin: 0;
-    padding: 0;
+    display: flex; /* Verwende Flexbox für die Anordnung der Elemente in der Fußzeile */
+    justify-content: center; /* Zentriere die Elemente horizontal in der Fußzeile */
+    width: 100%; /* Volle Breite für die Fußzeilen-Navigation */
+    list-style-type: none; /* Entferne Aufzählungspunkte der Liste in der Fußzeilen-Navigation */
+    overflow: hidden; /* Verstecke Überlauf in der Fußzeilen-Navigation */
+    text-align: center; /* Zentriere den Text in der Fußzeilen-Navigation */
+    background-color: #476074; /* Hintergrundfarbe für die Fußzeilen-Navigation */
+    border-top: 1px solid #bbb; /* Obere Grenzlinie mit 1px Dicke und grauer Farbe für die Fußzeilen-Navigation */
+    margin: 0; /* Null Außenabstand für die Fußzeilen-Navigation */
+    padding: 0; /* Null Innenabstand für die Fußzeilen-Navigation */
 }
 
 footer ul li {
-    float: left;
-    border-right: 1px solid #bbb;
+    float: left; /* Elemente in der Fußzeilen-Navigation links ausrichten */
+    border-right: 1px solid #bbb; /* Rechte Grenzlinie mit 1px Dicke und grauer Farbe zwischen den Elementen */
 }
 
 footer ul li:last-child {
-    border-right: none;
+    border-right: none; /* Entferne die rechte Grenzlinie für das letzte Element in der Fußzeilen-Navigation */
 }
 
 footer ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: block; /* Elemente in der Fußzeilen-Navigation als Blockelemente anzeigen */
+    color: white; /* Textfarbe für Links in der Fußzeilen-Navigation auf Weiß setzen */
+    text-align: center; /* Zentriere den Text in den Links der Fußzeilen-Navigation */
+    padding: 14px 16px; /* Innenabstand oben/unten: 14px, links/rechts: 16px für Links in der Fußzeilen-Navigation */
+    text-decoration: none; /* Unterstreichungen für Links in der Fußzeilen-Navigation entfernen */
 }
 
 footer ul li:hover {
-    background-color: white;
+    background-color: white; /* Hintergrundfarbe auf Weiß setzen, wenn über einem Element in der Fußzeilen-Navigation gehovert wird */
 }
 
 footer ul li:hover a {
-    color: #476074;
-    font-weight: bold;
+    color: #476074; /* Textfarbe auf Dunkelblau ändern, wenn über einem Link in der Fußzeilen-Navigation gehovert wird */
+    font-weight: bold; /* Fettdruck für den Text, wenn über einem Link in der Fußzeilen-Navigation gehovert wird */
 }
