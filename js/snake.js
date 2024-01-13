@@ -6,6 +6,7 @@
 // Der Code enthält auch Tastaturereignislistener für die Steuerung der Schlange und einen Startknopf, um das Spiel zu beginnen.
 
 /*
+
 Die Umsetzung der Canvas-Zeichenoberfläche ähnelt dem grafischen Benutzerinterface (GUI) von Microsoft Windows 
 (Quelle: https://wiki.selfhtml.org/wiki/JavaScript/Canvas)
 

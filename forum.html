@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi">
-        <meta name="date" content="02-01-2024">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>M10: Webtechnologie</title>
-        <script defer src="./js/forum.js"></script>
+       <!-- Definition des HTML5-Dokuments -->
+        <meta charset="UTF-8" /> <!-- Festlegung der Zeichenkodierung auf UTF-8 -->
+        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi"> <!-- Autoren -->
+        <meta name="date" content="02-01-2024"> <!-- Veröffentlichungsdatum -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Einstellungen für responsive Darstellung auf verschiedenen Geräten -->
+        <link rel="stylesheet" href="./css/styles.css"><!-- Verweis auf externe CSS-Datei für die Gestaltung -->
+        <title>M10: Webtechnologie</title> <!-- Titel des HTML-Dokuments -->
+        <script defer src="./js/forum.js"></script> <!-- Verweis auf externe JavaScript-Datei mit defer-Attribut -->
     </head>
 
     <body>
-      <header>
-        <nav>
-          <div>
-              <ul>
+      <!-- Beginn des Körperbereichs des HTML-Dokuments -->
+      <header>  <!-- Header-Bereich der Seite -->
+        <nav> <!-- Navigationsbereich im Header -->
+          <div> <!-- Container für den Navigationsbereich -->
+              <ul> <!-- Ungeordnete Liste für Navigationspunkte -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="game.html">Spiel</a></li>
                 <li><a href="shop.html">Online-Shop</a></li>
@@ -27,28 +29,35 @@
       </header>
 
       <main id="inhalt">
+        <!-- Hauptbereich der Webseite mit ID "inhalt" -->
+
         <div class="forum-container">
+          <!-- Container für das Forum -->
           <div class="forum-posts" id="forumPosts">
               <!-- Hier werden die Beiträge angezeigt -->
+              <!-- Beispiel-Beiträge -->
               <div class="post">
                 <div class="post-info">
-                  <h3>Giuseppe</h3>
+                  <h3>Anonym 1</h3>
                 </div>
                 <div class="post-content">
-                  <p>Ich beschwere mich über das Essen!</p>
+                  <p>Test</p>
                 </div>
               </div>
               <div class="post">
                 <div class="post-info">
-                  <h3>Benni</h3>
+                  <h3>Anonym 2</h3>
                 </div>
                 <div class="post-content">
-                  <p>lol</p>
+                  <p>Test</p>
                 </div>
               </div>
+              <!-- Ende der Beispiel-Beiträge -->
           </div>
-    
+          
+
           <div class="input-area">
+            <!-- Bereich für die Eingabe neuer Beiträge -->
               <label for="nameInput">Dein Name:</label>
               <input type="text" id="nameInput" placeholder="Dein Name">
               <textarea id="postInput" placeholder="Schreibe deinen Beitrag..."></textarea>
@@ -58,11 +67,15 @@
       </main>
 
       <footer>
+        <!-- Footer-Bereich der Seite -->
         <ul>
+          <!-- Ungeordnete Liste im Footer -->
             <li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+            <!-- Verschiedene Links im Footer zu Seiten wie Barrierefreiheitserklärung, Impressum und Datenschutzerklärung -->
         </ul>
       </footer>
     </body>
 </html>
+<!-- Ende des HTML-Dokuments -->
