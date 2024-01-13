@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi">
-        <meta name="date" content="02-01-2024">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>M10: Webtechnologie</title>
-        <script defer src="./js/shop.js"></script>
+      <!-- Definition des HTML5-Dokuments -->
+        <meta charset="UTF-8" /> <!-- Festlegung der Zeichenkodierung auf UTF-8 -->
+        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi"> <!-- Autoren -->
+        <meta name="date" content="02-01-2024"> <!-- Veröffentlichungsdatum -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Einstellungen für responsive Darstellung auf verschiedenen Geräten -->
+        <link rel="stylesheet" href="./css/styles.css"> <!-- Verweis auf externe CSS-Datei für die Gestaltung -->
+        <title>M10: Webtechnologie</title> <!-- Titel des HTML-Dokuments -->
+        <script defer src="./js/shop.js"></script> <!-- Verweis auf JavaScript-Datei für den Online-Shop mit defer-Attribut -->
     </head>
 
     <body>
-      <header>
-        <nav>
+      <!-- Beginn des Körperbereichs des HTML-Dokuments -->
+      <header> <!-- Header-Bereich der Seite -->
+        <nav> <!-- Navigationsbereich im Header -->
+
           <div>
+            <!-- Container für den Navigationsbereich -->
               <ul>
+                <!-- Ungeordnete Liste für Navigationspunkte -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="game.html">Spiel</a></li>
                 <li><a class="active" href="shop.html">Online-Shop</a></li>
@@ -27,11 +32,14 @@
       </header>
 
       <main id="inhalt">
-        <div class="content-container">
-          <!-- Produktliste -->
-          <div class="product-list">
-            <h1>Willkommen in unserem Online-Shop</h1>
+        <!-- Hauptbereich der Webseite mit ID "inhalt" -->
+        <div class="content-container"> <!-- Container für den gesamten Inhalt -->
 
+          <!-- Produktliste -->
+          <div class="product-list"> <!-- Container für die Produktliste -->
+            <h1>Willkommen in unserem Online-Shop</h1> <!-- Überschrift für den Online-Shop -->
+
+            <!-- Produkt 1 -->
             <div class="product">
               <img src="./image/patros.jpg" alt="Produkt 1">
               <h2>Ziegenkäse</h2>
@@ -40,6 +48,7 @@
               <button data-name="Produkt 1" data-price="19.99">In den Warenkorb</button>
             </div>
 
+            <!-- Produkt 2 -->
             <div class="product">
                 <img src="./image/katzenfutter.jpg" alt="Produkt 2">
                 <h2>Katzenfutter</h2>
@@ -48,6 +57,7 @@
                 <button data-name="Produkt 2" data-price="29.99">In den Warenkorb</button>
             </div>
 
+            <!-- Produkt 3 -->
             <div class="product">
                 <img src="./image/MrBeanTeddy.jpeg" alt="Produkt 3">
                 <h2>Teddy von MrBean</h2>
@@ -58,17 +68,21 @@
           </div>
 
           <!-- Warenkorb -->
-          <div id="shopping-cart" class="cart">
-              <h2>Warenkorb</h2>
+          <div id="shopping-cart" class="cart"> <!-- Container für den Warenkorb -->
+
+              <h2>Warenkorb</h2> <!-- Überschrift für den Warenkorb -->
               <ul id="cart-items"></ul>
-              <p>Gesamt: <span id="cart-total">€0.00</span></p>
-              <button id="checkout-btn">Zur Kasse</button>
+               <!-- Ungeordnete Liste für die Warenkorbpositionen -->
+              <p>Gesamt: <span id="cart-total">€0.00</span></p> <!-- Gesamtpreis im Warenkorb -->
+              <button id="checkout-btn">Zur Kasse</button> <!-- Button zur Kasse -->
           </div>
         </div>
       </main>
 
       <footer>
+        <!-- Footer-Bereich der Seite -->
         <ul>
+          <!-- Ungeordnete Liste für Fußzeilenlinks -->
             <li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li>
             <li><a href="impressum.html">Impressum</a></li>
             <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
@@ -76,3 +90,4 @@
       </footer>
     </body>
 </html>
+<!-- Ende des HTML-Dokuments -->
