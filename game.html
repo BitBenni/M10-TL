@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi">
-        <meta name="date" content="02-01-2024">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>M10: Webtechnologie</title>
-        <script defer src="./js/snake.js" type="module"></script>
+    <head>  <!-- Definition des HTML5-Dokuments -->
+        <meta charset="UTF-8" /> <!-- Festlegung der Zeichenkodierung auf UTF-8 -->
+        <meta name="author" content="Benjamin Boehm - Giuseppe Teresi"> <!-- Autoren -->
+        <meta name="date" content="02-01-2024"> <!-- Veröffentlichungsdatums -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Einstellungen für responsive Darstellung auf verschiedenen Geräten -->
+        <link rel="stylesheet" href="./css/styles.css"> <!-- Verweis auf externe CSS-Datei für die Gestaltung -->
+        <title>M10: Webtechnologie</title> <!-- Titel des HTML-Dokuments -->
+        <script defer src="./js/snake.js" type="module"></script> <!-- Verweis auf externe JavaScript-Datei mit defer-Attribut -->
     </head>
     <body>
-    
-        <header>
-            <nav>
+        <!-- Beginn des Körperbereichs des HTML-Dokuments -->
+        <header> <!-- Header-Bereich der Seite -->
+            <nav> <!-- Navigationsbereich im Header -->
               <div>
+                <!-- Container für den Navigationsbereich -->
                   <ul>
+                    <!-- Ungeordnete Liste für Navigationspunkte -->
                     <li><a href="home.html">Home</a></li>
                     <li><a class="active" href="game.html">Spiel</a></li>
                     <li><a href="shop.html">Online-Shop</a></li>
@@ -26,20 +28,25 @@
             </nav>
         </header>
         
-        <main id="inhalt">
-            <div id="gameArea">
-                <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <main id="inhalt"> <!-- Hauptbereich der Webseite mit ID "inhalt" -->
+
+            <div id="gameArea"> <!-- Container für den Spielbereich -->
+                <canvas id="gameCanvas" width="400" height="400"></canvas> <!-- Canvas-Element für die Spielfläche -->
             </div>
-            <div>
-                <button id="startButton">Start Spiel</button>
+
+            <div> <!-- Weiterer Container -->
+                <button id="startButton">Start Spiel</button> <!-- Button zum Starten des Spiels mit ID "startButton" -->
             </div>
+
         </main>
 
-        <footer>
-            <ul>
+        <footer> <!-- Footer-Bereich der Seite -->
+            <ul> 
+                <!-- Ungeordnete Liste im Footer -->
                 <li><a href="barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></li>
                 <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+                <!-- Verschiedene Links im Footer zu Seiten wie Barrierefreiheitserklärung, Impressum und Datenschutzerklärung -->
             </ul>
         </footer>
     </body>
