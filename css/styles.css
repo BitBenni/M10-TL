@@ -451,3 +451,16 @@ footer ul li:hover a {
     color: #476074; /* Textfarbe auf Dunkelblau ändern, wenn über einem Link in der Fußzeilen-Navigation gehovert wird */
     font-weight: bold; /* Fettdruck für den Text, wenn über einem Link in der Fußzeilen-Navigation gehovert wird */
 }
+
+/* 
+------------------------------------------------
+Responsive Design / Mobile Website
+------------------------------------------------
+*/
+
+@media only screen and (max-width: 600px) {
+    /* Stile für Bildschirmgrößen bis 600px Breite */
+    body {
+        font-size: 10px;
+    }
+}
