@@ -21,6 +21,7 @@ body {
       radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
       #476074; /* Erstellung eines Hintergrunds mit radialen Verläufen und Farbverläufen */
     background-size: calc(2*var(--s)) calc(2*var(--s)); /* Festlegung der Hintergrundgröße */
+    
 }
 
 
