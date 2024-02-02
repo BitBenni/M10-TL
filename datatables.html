@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <title>DataTables Beispiel</title>
+</head>
+<body>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Data will be dynamically loaded here -->
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Load data from JSON file
+        $.ajax({
+            url: 'data.json', // Replace with the path to your JSON file
+            dataType: 'json',
+            success: function(jsonData) {
+                // Initialize DataTable
+                $('#example').DataTable({
+                    data: jsonData,
+                    columns: [
+                        { data: 'id' },
+                        { data: 'name' },
+                        { data: 'email' }
+                    ]
+                });
+            },
+            error: function(error) {
+                console.error('JSON Datei existiert nicht:', error);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
