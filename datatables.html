@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
-    <title>DataTables Beispiel</title>
+        <!-- Definition des HTML5-Dokuments -->
+          <meta charset="UTF-8" /> <!-- Festlegung der Zeichenkodierung auf UTF-8 -->
+          <meta name="author" content="Benjamin Boehm - Giuseppe Teresi"> <!-- Autoren -->
+          <meta name="date" content="02-01-2024"> <!-- Veröffentlichungsdatum des Dokuments -->
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Einstellungen für responsive Darstellung auf verschiedenen Geräten -->
+          <link rel="stylesheet" href="./css/styles.css"> <!-- Verweis auf externe CSS-Datei für die Gestaltung -->
+          <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"> <!-- CSS Datei für die DataTables, hier Example gewählt-->
+          <title>DataTables Beispiel</title> <!-- Titel des HTML-Dokuments -->
+   
 </head>
 <body>
+    <!-- Beginn des Körperbereichs des HTML-Dokuments -->
+    <header>
+      <!-- Header-Bereich der Seite -->
+      <nav> <!-- Navigationsbereich im Header -->
+        <div>  <!-- Container für den Navigationsbereich -->
+            <ul>
+              <!-- Ungeordnete Liste für Navigationspunkte -->
+              <li><a class="active" href="home.html">Home</a></li>
+              <li><a href="game.html">Spiel</a></li>
+              <li><a href="shop.html">Online-Shop</a></li>
+              <li><a href="social-media.html">Social Media</a></li>
+              <li><a href="forum.html">Forum</a></li>
+              <li><a href="datatables.html"> DataTables </li>
+              <li id="about"><a href="about.html">Über uns</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
 
-<table id="example" class="display" style="width:100%">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Data will be dynamically loaded here -->
-    </tbody>
-</table>
-
+    <main id="inhalt">
+      <!-- Hauptbereich der Webseite mit ID "inhalt" -->
+      <div id="homepage">
+        <table id="example" class="display" style="width:100%"> <!-- Tabellenabschnitt-->
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Hier werden die Daten der JSON Datei geladen und als Tabelle dargestellt -->
+            </tbody>
+        </table>
+    </div>
+    </main>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-
 <script>
-    $(document).ready(function() {
-        // Load data from JSON file
-        $.ajax({
-            url: 'data.json', // Replace with the path to your JSON file
-            dataType: 'json',
-            success: function(jsonData) {
-                // Initialize DataTable
-                $('#example').DataTable({
-                    data: jsonData,
-                    columns: [
-                        { data: 'id' },
-                        { data: 'name' },
-                        { data: 'email' }
-                    ]
-                });
-            },
-            error: function(error) {
-                console.error('JSON Datei existiert nicht:', error);
-            }
+
+        $(document).ready(function() {
+            // Hier wird die JSON-Datei geladen
+            $.ajax({
+                url: './json/data.json', // URL der JSON-Datei
+                dataType: 'json',
+                success: function(jsonData) {
+                    // Initialize DataTable
+                    $('#example').DataTable({ // Darstellung der Tabelle mit CSS: Example 
+                        data: jsonData,
+                        columns: [
+                            { data: 'id' },
+                            { data: 'name' },
+                            { data: 'email' }
+                        ]
+                    });
+                },
+                error: function(error) { // wenn JSON nicht vorhanden gebe Error in der Console aus
+                    console.error('JSON Datei existiert nicht:', error);
+                }
+            });
         });
-    });
-</script>
+
+</script> 
+
 
 </body>
 </html>
