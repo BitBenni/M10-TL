@@ -70,8 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Funktion für den Checkout-Prozess
     function checkout() {
-        // Fügen Sie hier Ihre Kassenlogik hinzu (z. B. Weiterleitung zu einer Bestätigungsseite)
-        alert('Bezahlung abgeschlossen! Vielen Dank für Ihren Einkauf.');
+        alert('Bezahlung abgeschlossen! Vielen Dank für Ihren Einkauf.'); // alertBox ploppt auf
         // Warenkorb nach dem Bezahlen leeren
         cartItems.length = 0;
         updateCart();
