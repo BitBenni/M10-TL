@@ -57,6 +57,10 @@ nav ul li:last-child {
     float: right; /* Platziere das Element 'about' auf der rechten Seite der Navigation */
 }
 
+#overflow{
+    overflow:hidden /* Muss "aus" sein da sonst der Scrollbalken durch das Spiel (Pfeiltasten) mit bewegt wird */
+}
+
 nav ul li a {
     display: block; /* Element als Blockelement anzeigen */
     color: white; /* Textfarbe auf Weiß setzen */
