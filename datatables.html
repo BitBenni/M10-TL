@@ -9,6 +9,8 @@
           <link rel="stylesheet" href="./css/styles.css"> <!-- Verweis auf externe CSS-Datei für die Gestaltung -->
           <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"> <!-- CSS Datei für die DataTables, hier Example gewählt-->
           <title>DataTables Beispiel</title> <!-- Titel des HTML-Dokuments -->
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
    
 </head>
 <body>
@@ -37,7 +39,7 @@
         <table id="example" class="display" style="width:100%"> <!-- Tabellenabschnitt-->
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>ID</th> <!-- JSON Attribute-->
                     <th>Name</th>
                     <th>Email</th>
                 </tr>
@@ -48,21 +50,23 @@
         </table>
     </div>
     </main>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 <script>
 
         $(document).ready(function() {
             // Hier wird die JSON-Datei geladen
-            $.ajax({
+
+            $.ajax({ // AJAX steht für "Asynchronous JavaScript and XML" und ist eine Technik, die es ermöglicht, 
+                    // Daten zwischen einem Webbrowser und einem Webserver im Hintergrund auszutauschen, ohne die gesamte Seite neu zu laden
+
                 url: './json/data.json', // URL der JSON-Datei
-                dataType: 'json',
+                dataType: 'json', // Datentyp der Datei (hier JSON)
                 success: function(jsonData) {
-                    // Initialize DataTable
+                    // Erstelle DataTable
                     $('#example').DataTable({ // Darstellung der Tabelle mit CSS: Example 
                         data: jsonData,
                         columns: [
-                            { data: 'id' },
+                            { data: 'id' }, // Attribute JSON
                             { data: 'name' },
                             { data: 'email' }
                         ]
