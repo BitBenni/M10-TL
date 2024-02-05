@@ -246,9 +246,6 @@ Spiel // Snake
     margin: auto; /* Zentriere das Spielcanvas */
     display: block; /* Zeige das Spielcanvas als Blockelement an */
     margin-bottom: 10px; /* Unten 10px Abstand für das Spielcanvas */
-    
-    
-    
 }
 
 button {
