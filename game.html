@@ -24,6 +24,9 @@
                     <li><a href="forum.html">Forum</a></li>
                     <li><a href="datatables.html"> DataTables </a></li> <!-- Navigationslink zur DataTables-Seite -->
                     <li id="about"><a href="about.html">Über uns</a></li>
+
+                    <!-- Button für Dark/Light Mode -->
+                <button id="mode-switch">Dunkel</button>
                   </ul>
               </div>
             </nav>
@@ -39,14 +42,7 @@
 
             <div> <!-- Weiterer Container -->
                 <button id="startButton">Start Spiel</button> <!-- Button zum Starten des Spiels mit ID "startButton" -->
-                <br>
-                <p><strong> Die Steuerung der Schlange in unserem Snake-Spiel ist intuitiv und einfach: </strong> <br> Mit den Pfeiltasten (oben, 
-                    unten, links, rechts) bestimmen Sie die Richtung der Schlange. <br> <br> 
-                    <strong>Das Spielziel ist ebenso klar wie herausfordernd:</strong> <br> Führen Sie die Schlange geschickt über das Spielfeld, um Äpfel zu fressen. <br> Jeder 
-                    verschlungene Apfel verlängert die Schlange und bringt Punkte für den eigenen Rekord. 
-                </p>
             </div>
-            
         </main>
 
         <footer> <!-- Footer-Bereich der Seite -->
@@ -58,5 +54,26 @@
                 <!-- Verschiedene Links im Footer zu Seiten wie Barrierefreiheitserklärung, Impressum und Datenschutzerklärung -->
             </ul>
         </footer>
+
+        <div id="info-popup" class="popup">
+            <div class="modal-overlay"></div>
+            <div class="popup-content">
+                <span class="close-btn" id="close-info-btn">&times;</span>
+                <h2>Anleitung</h2>
+                <p>
+                    <strong> Die Steuerung der Schlange in unserem Snake-Spiel ist intuitiv und einfach: </strong><br>
+                    Mit den Pfeiltasten (oben, unten, links, rechts) bestimmen Sie die Richtung der Schlange. <br>
+                </p>
+                <br>
+                <h2>Spielziel</h2>
+                <p>
+                    <strong>Das Spielziel ist ebenso klar wie herausfordernd:</strong> <br>
+                    Führen Sie die Schlange geschickt über das Spielfeld, um Äpfel zu fressen. <br>
+                    Jeder verschlungene Apfel verlängert die Schlange und bringt Punkte für den eigenen Rekord. 
+                </p>          
+                <button id="ok-info-btn">Verstanden</button>
+            </div>
+        </div>
+  
     </body>
 </html>

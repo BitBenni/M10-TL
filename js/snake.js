@@ -244,3 +244,40 @@ document.getElementById("startButton").addEventListener("click", function(){
     drawGame();
 });
 
+// Funktion zum Anzeigen des Info-Popups
+function showInfoPopup() {
+    document.getElementById("info-popup").style.display = "flex";
+}
+
+// Funktion zum Schließen des Info-Popups
+function closeInfoPopup() {
+    document.getElementById("info-popup").style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    showInfoPopup(); // Zeige das Info-Popup an
+});
+
+ // Ereignislistener für den Klick auf den "Schließen"-Button im Info-Popup
+ document.getElementById('close-info-btn').addEventListener('click', closeInfoPopup);
+
+ // Ereignislistener für den Klick auf den "OK"-Button im Info-Popup
+ document.getElementById('ok-info-btn').addEventListener('click', closeInfoPopup);
+
+ document.addEventListener('DOMContentLoaded', function() {
+    // Überprüfen, ob der Schalter für den Moduswechsel existiert
+    var modeSwitch = document.getElementById('mode-switch');
+    if (modeSwitch) {
+        modeSwitch.addEventListener('click', function() {
+            // Umkehrung des aktuellen Modus
+            document.body.classList.toggle('dark-mode');
+            // Aktualisieren des Textes und Stils des Schalters
+            if (document.body.classList.contains('dark-mode')) {
+                modeSwitch.textContent = 'Hell';
+            } else {
+                modeSwitch.textContent = 'Dunkel';
+            }
+        });
+    }
+});
+

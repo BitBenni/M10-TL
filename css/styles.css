@@ -24,8 +24,6 @@ body {
     
 }
 
-
-
 /* 
 ------------------------------------------------
 Navigation
@@ -78,6 +76,77 @@ nav ul li a:hover { /* Stil für Hover-Effekt im Navigationsmenü */
 .active { /* Stil für aktives Navigationsmenü-Element */
     background-color: #b89f8b; /* Hintergrundfarbe auf Braun setzen, um das aktive Element zu markieren */
     color: black; /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
+}
+
+nav button {
+    background-color: #ffffff; 
+    color: #476074;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    text-align: center;
+    margin-top: 3px;
+    float: right;
+}
+
+/* 
+------------------------------------------------
+Dark-Mode
+------------------------------------------------
+*/
+
+.dark-mode {
+    background-color: #222;
+    --s: 60px; /* Definition einer CSS-Variable für die Kopfhöhe */
+    --_g: #0000 83%,#5b5b5b 85% 99%,#0000 101%; /* Definition einer CSS-Variable für den Hintergrund */
+    background: 
+      radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+      radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+      radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+      radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+      #000000; /* Erstellung eines Hintergrunds mit radialen Verläufen und Farbverläufen (Made by Benjamin Böhm) */
+    background-size: calc(2*var(--s)) calc(2*var(--s)); /* Festlegung der Hintergrundgröße */
+}
+
+.dark-mode #inhalt {
+    background-color:rgb(48, 52, 52); 
+}
+
+.dark-mode #inhalt div {
+    color: white;
+}
+
+.dark-mode nav ul {
+    background-color: rgb(80, 80, 80); 
+}
+
+.dark-mode nav ul li a:hover { /* Stil für Hover-Effekt im Navigationsmenü */
+    background-color: rgb(0, 0, 0); /* Hintergrundfarbe auf Weiß setzen, wenn über dem Link gehovert wird */
+    color: rgb(255, 255, 255); /* Textfarbe auf Dunkelblau ändern, wenn über dem Link gehovert wird */
+}
+
+.dark-mode .active { /* Stil für aktives Navigationsmenü-Element */
+    background-color: #c4c4c4; /* Hintergrundfarbe auf Braun setzen, um das aktive Element zu markieren */
+    color: rgb(0, 0, 0); /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
+}
+
+.dark-mode nav button {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode footer ul {
+    background-color: rgb(80, 80, 80); /* Hintergrundfarbe für die Fußzeilen-Navigation */
+}
+
+.dark-mode footer ul li:hover {
+    background-color: rgb(0, 0, 0); /* Hintergrundfarbe auf Weiß setzen, wenn über dem Link gehovert wird */
+    color: rgb(255, 255, 255); /* Textfarbe auf Dunkelblau ändern, wenn über dem Link gehovert wird */
+}
+
+.dark-mode footer ul li:hover a {
+    background-color: #c4c4c4; /* Hintergrundfarbe auf Braun setzen, um das aktive Element zu markieren */
+    color: rgb(0, 0, 0); /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
 }
 
 /* 
@@ -262,6 +331,10 @@ button {
     margin: auto; /* Zentriere Buttons im Spielbereich */
 }
 
+#info-popup div h2, #info-popup div p{
+    text-align: center;
+}
+
 /* 
 ------------------------------------------------
 Shop
@@ -414,7 +487,6 @@ Fußzeile
 /* Stilregeln für die Fußzeilen-Navigation */
 footer {
     width: 100%; /* Volle Breite für die Fußzeile */
-    background-color: #476074; /* Hintergrundfarbe für die Fußzeile setzen */
     color: white; /* Textfarbe für die Fußzeile auf weiß setzen */
     position: relative; /* Position relativ setzen */
     margin-top: auto; /* Oberen Abstand automatisch setzen */
