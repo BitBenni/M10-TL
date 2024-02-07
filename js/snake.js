@@ -172,7 +172,7 @@ function isGameOver() {
     
     // Zeige "Game Over!" Nachricht und beende das Spiel, wenn gameOver true ist
     if(gameOver) {
-        ctx.fillStyle = darkmode ? "#121212" :"#476074";
+        ctx.fillStyle = darkmode ? "#fcfafa" :"#476074";
         ctx.font = "50px Verdana";
         
         ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
@@ -268,7 +268,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
  document.addEventListener('DOMContentLoaded', function() {
     // Überprüfen, ob der Schalter für den Moduswechsel existiert
-    var modeSwitch = document.getElementById('mode-switch');
+    
+    let modeSwitch = document.getElementById('mode-switch');
     if (modeSwitch) {
         modeSwitch.addEventListener('click', function() {
             // Umkehrung des aktuellen Modus

@@ -44,7 +44,7 @@ document.getElementById('addPostBtn').addEventListener('click', function() { // 
 
 document.addEventListener('DOMContentLoaded', function() {
     // Überprüfen, ob der Schalter für den Moduswechsel existiert
-    var modeSwitch = document.getElementById('mode-switch');
+    let modeSwitch = document.getElementById('mode-switch');
     if (modeSwitch) {
         modeSwitch.addEventListener('click', function() {
             // Umkehrung des aktuellen Modus

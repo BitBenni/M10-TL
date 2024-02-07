@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () { // Ereignislistener 
     document.getElementById('confirm-registration-btn').addEventListener('click', function () {  // Ereignislistener für den Klick auf den "Registrierung bestätigen"-Button im Registrierungs-Popup
         
         // Prüfung auf leere Felder
-        var nameInput = document.getElementById('name');
-        var vornameInput = document.getElementById('vorname');
-        var emailInput = document.getElementById('email');
-        var errorMessage = document.getElementById('error-message');
+        let nameInput = document.getElementById('name');
+        let vornameInput = document.getElementById('vorname');
+        let emailInput = document.getElementById('email');
+        let errorMessage = document.getElementById('error-message');
 
         // Wenn eines der Felder leer ist, zeige die Fehlermeldung an
         if (nameInput.value.trim() === '' || vornameInput.value.trim() === '' || emailInput.value.trim() === '') {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () { // Ereignislistener 
 
 document.addEventListener('DOMContentLoaded', function() {
     // Überprüfen, ob der Schalter für den Moduswechsel existiert
-    var modeSwitch = document.getElementById('mode-switch');
+    let modeSwitch = document.getElementById('mode-switch');
     if (modeSwitch) {
         modeSwitch.addEventListener('click', function() {
             // Umkehrung des aktuellen Modus
