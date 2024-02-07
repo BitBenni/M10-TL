@@ -171,6 +171,10 @@ Dark-Mode
     color: #000000; /* Textfarbe für Buttons im Spielbereich */
 }
 
+.dark-mode table {
+    background-color: #000;
+}
+
 /* 
 ------------------------------------------------
 Inhalt / Main
