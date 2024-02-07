@@ -52,6 +52,8 @@ let score = 0; // Initialisiere den Punktestand des Spielers
 let snakeParts = [];
 let tailLength = 2;
 
+let darkmode = false;
+
 // Funktion zum Zeichnen des Spiels
 function drawGame() {
 
@@ -76,14 +78,14 @@ function drawGame() {
 
 // Funktion zum Löschen des Bildschirms
 function clearScreen() {
-    ctx.fillStyle = '#eee';
+    ctx.fillStyle = darkmode ? '#222' : '#eee';
     ctx.fillRect(0,0,canvas.width,canvas.height);
 }
 
 // Funktion zum Zeichnen der Schlange
 function drawSnake() {
     
-    ctx.fillStyle = '#73a0ee'; // Setze die Farbe für die Schlange
+    ctx.fillStyle = darkmode ? '#aaaaee' : '#73a0ee'; // Setze die Farbe für die Schlange
 
     // Iteriere durch die Schlangenteile und zeichne sie
     for(let i = 0; i < snakeParts.length; i++) {
@@ -98,7 +100,7 @@ function drawSnake() {
         snakeParts.shift(); 
     }
 
-    ctx.fillStyle = '#303179'; // Setze die Farbe für den Schlangenkopf
+    ctx.fillStyle = darkmode ? '#cccc79' : '#303179'; // Setze die Farbe für den Schlangenkopf
     ctx.fillRect(headX * tileCount, headY * tileCount, tileSize,tileSize); // Zeichne den Schlangenkopf
     
 }
@@ -111,7 +113,7 @@ function changeSnakePosition(){
 
 // Funktion zum Zeichnen des Apfels
 function drawApple() {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = darkmode ? "orange" : "red";
     ctx.fillRect(appleX * tileCount, appleY * tileCount, tileSize, tileSize);
 }
 
@@ -131,7 +133,7 @@ function checkAppleCollision() {
 
 // Funktion zum Zeichnen des Punktestands
 function drawScore() {
-    ctx.fillStyle = "#141850";
+    ctx.fillStyle = darkmode ? "#eee" : "#141850";
     ctx.font = "24px Roboto"; // Aendere die Schriftgröße auf 24px oder eine andere gewünschte Größe
     ctx.fillText("Score " + score, canvas.width - 100, 30); // Passe die Position nach Bedarf an
 }
@@ -170,7 +172,7 @@ function isGameOver() {
     
     // Zeige "Game Over!" Nachricht und beende das Spiel, wenn gameOver true ist
     if(gameOver) {
-        ctx.fillStyle = "#476074";
+        ctx.fillStyle = darkmode ? "#121212" :"#476074";
         ctx.font = "50px Verdana";
         
         ctx.fillText("Game Over!", canvas.width / 6.5, canvas.height / 2);
@@ -271,6 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modeSwitch.addEventListener('click', function() {
             // Umkehrung des aktuellen Modus
             document.body.classList.toggle('dark-mode');
+            darkmode = !darkmode;
             // Aktualisieren des Textes und Stils des Schalters
             if (document.body.classList.contains('dark-mode')) {
                 modeSwitch.textContent = 'Hell';

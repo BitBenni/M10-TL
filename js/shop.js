@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.toggle('dark-mode');
             // Aktualisieren des Textes und Stils des Schalters
             if (document.body.classList.contains('dark-mode')) {
-                modeSwitch.textContent = 'Hell';
+                modeSwitch.textContent = 'Hellmut';
             } else {
-                modeSwitch.textContent = 'Dunkel';
+                modeSwitch.textContent = 'Sichert';
             }
         });
     }

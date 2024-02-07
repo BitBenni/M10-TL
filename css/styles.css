@@ -87,6 +87,7 @@ nav button {
     text-align: center;
     margin-top: 3px;
     float: right;
+    margin-right: 10px;
 }
 
 /* 
@@ -133,6 +134,7 @@ Dark-Mode
 .dark-mode nav button {
     background-color: #000;
     color: #fff;
+    border: 0;
 }
 
 .dark-mode footer ul {
@@ -147,6 +149,26 @@ Dark-Mode
 .dark-mode footer ul li:hover a {
     background-color: #c4c4c4; /* Hintergrundfarbe auf Braun setzen, um das aktive Element zu markieren */
     color: rgb(0, 0, 0); /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
+}
+
+.dark-mode .cart {
+    background-color: #cdcdcd; /* Schwarze Hintergrundfarbe für den Warenkorb */
+}
+
+.dark-mode .cart h2, .dark-mode .cart p{
+    color: black;
+}
+
+.dark-mode button {
+    background-color: #cdcdcd; /* Hintergrundfarbe für Buttons im Spielbereich */
+    border: 4px solid #7f7f7f; /* Rand mit 4px und blauer Farbe für Buttons im Spielbereich */
+    color: #000000; /* Textfarbe für Buttons im Spielbereich */
+}
+
+.dark-mode #gameCanvas {
+    background-color: #cdcdcd; /* Hintergrundfarbe für Buttons im Spielbereich */
+    border: 4px solid #7f7f7f; /* Rand mit 4px und blauer Farbe für Buttons im Spielbereich */
+    color: #000000; /* Textfarbe für Buttons im Spielbereich */
 }
 
 /* 
