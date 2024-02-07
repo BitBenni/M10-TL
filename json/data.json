@@ -1,6 +1,6 @@
 [
     {"id": 1, "name": "Giuseppe Teresi", "email": "giuseppe.teresi@vit-bund.de"},
-    {"id": 2, "name": "Benjamin Paul Böhm", "email": "jane@evit-bund.de"},
+    {"id": 2, "name": "Benjamin Paul Böhm", "email": "test@vit-bund.de"},
     {"id": 3, "name": "Test1", "email": "test1@test.com"},
     {"id": 4, "name": "Test2", "email": "test2@test.com"},
     {"id": 5, "name": "Test3", "email": "test3@test.com"},

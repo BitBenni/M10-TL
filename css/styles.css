@@ -78,16 +78,17 @@ nav ul li a:hover { /* Stil für Hover-Effekt im Navigationsmenü */
     color: black; /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
 }
 
-nav button {
-    background-color: #ffffff; 
-    color: #476074;
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    text-align: center;
-    margin-top: 3px;
-    float: right;
-    margin-right: 10px;
+nav button { /* Stile für Navigations-Schaltflächen */
+
+    background-color: #ffffff; /* Hintergrundfarbe für die Schaltflächen */
+    color: #476074; /* Textfarbe für die Schaltflächen */
+    border: none; /* Kein Rahmen für die Schaltflächen */
+    border-radius: 5px; /* Abrundung der Ecken der Schaltflächen */
+    cursor: pointer; /* Zeigerzeiger beim Überfahren der Schaltflächen */
+    text-align: center; /* Zentrierte Ausrichtung des Texts in den Schaltflächen */
+    margin-top: 3px; /* Oberer Seitenabstand der Schaltflächen */
+    float: right; /* Rechts ausgerichtet */
+    margin-right: 10px; /* Rechter Seitenabstand der Schaltflächen */
 }
 
 /* 
@@ -109,16 +110,19 @@ Dark-Mode
     background-size: calc(2*var(--s)) calc(2*var(--s)); /* Festlegung der Hintergrundgröße */
 }
 
+/* Dunkelmodus-Stile für den Inhalt */
 .dark-mode #inhalt {
-    background-color:rgb(48, 52, 52); 
+    background-color:rgb(48, 52, 52); /* Hintergrundfarbe für den Inhalt im Dunkelmodus (dunkles Grau) */
 }
 
-.dark-mode #inhalt div {
-    color: white;
+/* Dunkelmodus-Stile für div-Elemente innerhalb von #inhalt */
+.dark-mode #inhalt div { 
+    color: white; /* Textfarbe für div-Elemente innerhalb von #inhalt im Dunkelmodus (weiß) */
 }
 
+/* Dunkelmodus-Stile für das Navigationsmenü */
 .dark-mode nav ul {
-    background-color: rgb(80, 80, 80); 
+    background-color: rgb(80, 80, 80); /* Hintergrundfarbe für das Navigationsmenü im Dunkelmodus (dunkles Grau) */
 }
 
 .dark-mode nav ul li a:hover { /* Stil für Hover-Effekt im Navigationsmenü */
@@ -131,10 +135,11 @@ Dark-Mode
     color: rgb(0, 0, 0); /* Textfarbe auf Schwarz setzen, um das aktive Element hervorzuheben */
 }
 
+/* Dunkelmodus-Stile für Schaltflächen im Navigationsmenü */
 .dark-mode nav button {
-    background-color: #000;
-    color: #fff;
-    border: 0;
+    background-color: #000; /* Hintergrundfarbe für die Schaltflächen im Dunkelmodus (schwarz) */
+    color: #fff; /* Textfarbe für die Schaltflächen im Dunkelmodus (weiß) */
+    border: 0; /* Keine Rahmen für die Schaltflächen im Dunkelmodus */
 }
 
 .dark-mode footer ul {
@@ -152,11 +157,11 @@ Dark-Mode
 }
 
 .dark-mode .cart {
-    background-color: #cdcdcd; /* Schwarze Hintergrundfarbe für den Warenkorb */
+    background-color: #cdcdcd; /* Graue Hintergrundfarbe für den Warenkorb */
 }
 
-.dark-mode .cart h2, .dark-mode .cart p{
-    color: black;
+.dark-mode .cart h2, .dark-mode .cart p{ /* Dunkelmodus-Stile für Überschrift (h2) und Absatz (p) innerhalb des Warenkorbs (.cart) */
+    color: black; /* Textfarbe für Überschrift (h2) und Absatz (p) innerhalb des Warenkorbs im Dunkelmodus (schwarz) */
 }
 
 .dark-mode button {
@@ -167,12 +172,12 @@ Dark-Mode
 
 .dark-mode #gameCanvas {
     background-color: #cdcdcd; /* Hintergrundfarbe für Buttons im Spielbereich */
-    border: 4px solid #7f7f7f; /* Rand mit 4px und blauer Farbe für Buttons im Spielbereich */
+    border: 4px solid #7f7f7f; /* Rand mit 4px und grauer Farbe für Buttons im Spielbereich */
     color: #000000; /* Textfarbe für Buttons im Spielbereich */
 }
 
-.dark-mode table {
-    background-color: #000;
+.dark-mode table { /* Dunkelmodus-Stil für Tabellen */
+    background-color: #000; /* Hintergrundfarbe für Tabellen im Dunkelmodus (schwarz) */
 }
 
 
@@ -424,6 +429,50 @@ Socialmedia
 Forum
 ------------------------------------------------
 */
+
+/*Dark-Mode*/
+.dark-mode .forum-container{
+
+    background-color: #585757; /* Hintergrundfarbe für das Forum-Container setzen */
+
+}
+
+.dark-mode .post {
+
+    background-color: rgb(48, 52, 52); /* Hintergrundfarbe für das Forum-Post setzen */
+
+}
+
+.dark-mode .forum-container button {
+
+    background-color: rgb(48, 52, 52); /* Hintergrundfarbe für Buttons im Forum-Container */
+    color: white;
+
+}
+
+.dark-mode .forum-container button:hover {
+    background-color: rgb(48, 52, 52); /* Hintergrundfarbe für Hover-Effekt von Buttons im Forum-Container */
+}
+
+.dark-mode .input-area {
+   
+    background-color: #585757; /* Hintergrundfarbe für den Eingabe-Bereich im Forum setzen */
+    
+}
+
+.dark-mode .forum-container textarea{
+
+    background-color: rgb(48, 52, 52);
+    color: white;
+}
+
+.dark-mode .forum-container textarea::placeholder {
+
+    color: white;
+}
+
+
+
 
 .forum-container {
     background-color: #f0f0f0; /* Hintergrundfarbe für das Forum-Container setzen */
