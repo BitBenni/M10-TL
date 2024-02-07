@@ -460,16 +460,32 @@ Forum
     
 }
 
-.dark-mode .forum-container textarea{
+.dark-mode .forum-container textarea{ /* Textarea Farbe ändern für Dark-Mode*/
 
     background-color: rgb(48, 52, 52);
     color: white;
 }
 
-.dark-mode .forum-container textarea::placeholder {
+.dark-mode .forum-container textarea::placeholder { /* placeholder Farbe ändern für Dark-Mode*/
 
     color: white;
 }
+
+.dark-mode #nameInput{ /* nameInput Farbe ändern für Dark-Mode*/
+
+    background-color: rgb(48, 52, 52);
+    color: white;
+
+}
+
+.dark-mode #nameInput::placeholder{ /* placeholder Farbe ändern für Dark-Mode nameInput*/
+
+    
+    color: white;
+
+}
+
+
 
 
 
